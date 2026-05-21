@@ -149,6 +149,9 @@ def add_person():
             'email': data.get('email', ''),
             'phone': data.get('phone', ''),
             'age': data.get('age', ''),
+            'gender': data.get('gender', ''),
+            'blood_group': data.get('blood_group', ''),
+            'location': data.get('location', ''),
             'image_hash': img_hash
         }
         
