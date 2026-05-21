@@ -1,6 +1,6 @@
 body {
-    /* background: linear-gradient(135deg, #76648b 0%, #764ba2 100%); */
-    background-color: #3fc915;
+    background: linear-gradient(135deg, #76648b 0%, #764ba2 100%);
+    /* background-color: #5e685b !important; */
     min-height: 100vh;
 }
 
