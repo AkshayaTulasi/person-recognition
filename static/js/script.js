@@ -116,6 +116,9 @@ document.getElementById('addPersonForm').addEventListener('submit', async functi
     const email = document.getElementById('personEmail').value;
     const phone = document.getElementById('personPhone').value;
     const age = document.getElementById('personAge').value;
+    const gender = document.getElementById('personGender').value;
+    const blood_group = document.getElementById('personBloodGroup').value;
+    const location = document.getElementById('personLocation').value;
     const imageFile = document.getElementById('personImage').files[0];
     
     if (!imageFile) {
@@ -160,6 +163,9 @@ document.getElementById('addPersonForm').addEventListener('submit', async functi
                 email: email,
                 phone: phone,
                 age: age,
+                gender: gender,
+                blood_group: blood_group,
+                location: location,
                 image_path: uploadData.image_path
             })
         });
@@ -208,6 +214,9 @@ async function loadPersonsDatabase() {
                     <td>${person.email || '-'}</td>
                     <td>${person.phone || '-'}</td>
                     <td>${person.age || '-'}</td>
+                    <td>${person.gender || '-'}</td>
+                    <td>${person.blood_group || '-'}</td>
+                    <td>${person.location || '-'}</td>
                     <td>
                         <button class="btn btn-danger btn-sm" onclick="deletePerson('${person.id}')">
                             🗑️ Delete
